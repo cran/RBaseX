@@ -7,47 +7,29 @@
 The client can be used in 'standard' mode and in 'query' mode.
     Query mode is used to define queries, binding variables and for iterative evaluation.
 }
-\section{Super class}{
-\code{\link[RBaseX:BasexClient]{RBaseX::BasexClient}} -> \code{QueryClass}
-}
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
 \item \href{#method-new}{\code{QueryClass$new()}}
-\item \href{#method-Next}{\code{QueryClass$Next()}}
+\item \href{#method-Bind}{\code{QueryClass$Bind()}}
+\item \href{#method-Context}{\code{QueryClass$Context()}}
 \item \href{#method-Close}{\code{QueryClass$Close()}}
 \item \href{#method-ExecuteQuery}{\code{QueryClass$ExecuteQuery()}}
 \item \href{#method-Info}{\code{QueryClass$Info()}}
 \item \href{#method-Options}{\code{QueryClass$Options()}}
 \item \href{#method-Updating}{\code{QueryClass$Updating()}}
-\item \href{#method-Bind}{\code{QueryClass$Bind()}}
-\item \href{#method-Context}{\code{QueryClass$Context()}}
 \item \href{#method-More}{\code{QueryClass$More()}}
+\item \href{#method-Next}{\code{QueryClass$Next()}}
 \item \href{#method-Full}{\code{QueryClass$Full()}}
 \item \href{#method-clone}{\code{QueryClass$clone()}}
 }
-}
-\if{html}{
-\out{<details ><summary>Inherited methods</summary>}
-\itemize{
-\item \out{<span class="pkg-link" data-pkg="RBaseX" data-topic="BasexClient" data-id="Add">}\href{../../RBaseX/html/BasexClient.html#method-Add}{\code{RBaseX::BasexClient$Add()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="RBaseX" data-topic="BasexClient" data-id="Create">}\href{../../RBaseX/html/BasexClient.html#method-Create}{\code{RBaseX::BasexClient$Create()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="RBaseX" data-topic="BasexClient" data-id="Execute">}\href{../../RBaseX/html/BasexClient.html#method-Execute}{\code{RBaseX::BasexClient$Execute()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="RBaseX" data-topic="BasexClient" data-id="Query">}\href{../../RBaseX/html/BasexClient.html#method-Query}{\code{RBaseX::BasexClient$Query()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="RBaseX" data-topic="BasexClient" data-id="Replace">}\href{../../RBaseX/html/BasexClient.html#method-Replace}{\code{RBaseX::BasexClient$Replace()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="RBaseX" data-topic="BasexClient" data-id="Store">}\href{../../RBaseX/html/BasexClient.html#method-Store}{\code{RBaseX::BasexClient$Store()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="RBaseX" data-topic="BasexClient" data-id="bool_test_sock">}\href{../../RBaseX/html/BasexClient.html#method-bool_test_sock}{\code{RBaseX::BasexClient$bool_test_sock()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="RBaseX" data-topic="BasexClient" data-id="getSocket">}\href{../../RBaseX/html/BasexClient.html#method-getSocket}{\code{RBaseX::BasexClient$getSocket()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="RBaseX" data-topic="BasexClient" data-id="str_receive">}\href{../../RBaseX/html/BasexClient.html#method-str_receive}{\code{RBaseX::BasexClient$str_receive()}}\out{</span>}
-}
-\out{</details>}
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-new"></a>}}
 \subsection{Method \code{new()}}{
 Initialize a new instance from QueryClass
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{QueryClass$new(query, sock)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{QueryClass$new(query, Parent)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
@@ -55,21 +37,61 @@ Initialize a new instance from QueryClass
 \describe{
 \item{\code{query}}{Query-string}
 
+\item{\code{Parent}}{The 'Parent' for this QueryClass-instance}
+
 \item{\code{sock}}{Session-socket}
+
+\item{\code{Intercept}}{Pointer to the Intercept-method from the Session-object}
 }
 \if{html}{\out{</div>}}
 }
 \subsection{Details}{
-QueryClass-instances can only be created by calling the 'Query'-method from the 'BasexClient'-class
+QueryClass-instances can only be created by calling the 'Query'-method from
+    the 'BasexClient'-class.
 }
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Next"></a>}}
-\subsection{Method \code{Next()}}{
-Returns the next result when iterating over a query
+\if{html}{\out{<a id="method-Bind"></a>}}
+\subsection{Method \code{Bind()}}{
+Binds a value to a variable.
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{QueryClass$Next()}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{QueryClass$Bind(...)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{...}}{Binding Information}
+
+\item{\code{query_obj}}{QueryClass instance-ID}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Details}{
+When using the primitive functions, this function can be chained.
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-Context"></a>}}
+\subsection{Method \code{Context()}}{
+Binds a value to the context. The type will be ignored if the string is empty.
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{QueryClass$Context(value, type)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{value}}{Value that should be boud to the context}
+
+\item{\code{type}}{The type will be ignored when the string is empty}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Details}{
+When using the primitive functions, this function can be chained.
 }
 
 }
@@ -79,6 +101,10 @@ Returns the next result when iterating over a query
 Closes and unregisters the query with the specified ID
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{QueryClass$Close()}\if{html}{\out{</div>}}
+}
+
+\subsection{Details}{
+When using the primitive functions, this function can be chained.
 }
 
 }
@@ -120,47 +146,20 @@ Check if the query contains updating expressions.
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Bind"></a>}}
-\subsection{Method \code{Bind()}}{
-Binds a value to a variable.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{QueryClass$Bind(...)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{...}}{Binding Information}
-
-\item{\code{query_obj}}{QueryClass instance-ID}
-}
-\if{html}{\out{</div>}}
-}
-}
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Context"></a>}}
-\subsection{Method \code{Context()}}{
-Binds a value to the context. The type will be ignored if the string is empty.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{QueryClass$Context(value, type)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{value}}{Value that should be boud to the context}
-
-\item{\code{type}}{The type will be ignored when the string is empty}
-}
-\if{html}{\out{</div>}}
-}
-}
-\if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-More"></a>}}
 \subsection{Method \code{More()}}{
 Indicates if there are any other results in the query-result.
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{QueryClass$More()}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-Next"></a>}}
+\subsection{Method \code{Next()}}{
+Returns the next result when iterating over a query
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{QueryClass$Next()}\if{html}{\out{</div>}}
 }
 
 }

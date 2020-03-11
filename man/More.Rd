@@ -17,11 +17,15 @@ Indicates if there are any other results in the query-result.
 }
 \examples{
 \dontrun{
-query2 <- "for $i in 1 to 3 return <xml>Text { $i }</xml>"
-query_iterate <- Query(Session, query2)
+query_iterate <- Query(Session, "collection('TestDB/Test.xml')")
 while (More(query_iterate)) {
-  cat(Next(query_iterate), "\n")
+    iterResult <- c(iterResult, Next(query_iterate))
   }
+
+print(query_iterate)
+## Return "0d" "<Line_1 line=\"1\">Content 1</Line_1>"
+          "0d" "<Line_2 line=\"2\">Content 2</Line_2>"
+
 }
 
 }

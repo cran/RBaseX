@@ -12,13 +12,16 @@ Full(query_obj)
 \description{
 Executes a query and returns a vector with all resulting items as strings,
     prefixed by the 'XDM' (Xpath Data Model) Meta Data <https://www.xdm.org/>.
+    Meta Data and results are seaparated by a '|'.
 }
 \examples{
 \dontrun{
-query_txt <- "for $i in 1 to 2 return <xml>Text { $i }</xml>"
+query_txt <- "collection('TestDB/Test.xml')"
 query_obj <- Query(Session, query_txt)
 
-print(Full(query_obj))  ## Return "0b" "<xml>Text 1</xml>" "0b" "<xml>Text 2</xml>"
+print(Full(query_obj))
+## Return "0d" "/TestDB/Test.xml <Line_1 line=\"1\">Content 1</Line_1>"
+          "0d" "/TestDB/Test.xml <Line_2 line=\"2\">Content 2</Line_2>"
 
 }
 

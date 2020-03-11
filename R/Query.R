@@ -16,9 +16,26 @@
 #'
 #' @export
 Query <- function(session, query_string) {
-  return(list(queryObject = QueryClass$new(query_string, session$getSocket()),
-              success     = session$bool_test_sock())
-              # success = session$success
-              # success = session$get_success())
+  if (missing(query_string)) {
+    session$set_success(FALSE)
+    if (session$get_intercept()) {
+      return(list(queryObject = NULL, success = session$get_success()))
+    } else stop("No query-string provided")
+  }
+  tryCatch(
+    { queryObject <- QueryClass$new(query_string, session)
+    success <- session$get_socket()$bool_test_sock()
+    session$set_success(success)
+    return(list(queryObject = queryObject, success = session$get_success()))
+    },
+    error = function(e) {
+      success <- session$get_socket()$bool_test_sock()
+      session$set_success(success)
+      if (session$get_intercept()) {
+        return(list(queryObject = NULL, success = session$get_success()))
+      } else {
+        message("Error creating the query-object")
+        stop()}
+    }
   )
 }
