@@ -12,3 +12,6 @@ Close(query_obj)
 \description{
 Closes and unregisters the query with the specified ID
 }
+\details{
+This method returns \emph{self} invisibly, thus making it possible to chain together multiple method calls.
+}

@@ -4,17 +4,15 @@
 \alias{result2tibble}
 \title{result2tibble}
 \usage{
-result2tibble(input, cols)
+result2tibble(...)
 }
 \arguments{
-\item{input}{Query-result}
-
-\item{cols}{Number of columns}
+\item{...}{Query-result}
 }
 \value{
 Return result from query as tibble
 }
 \description{
-Converts the query-result to a tibble. The query-result is a list.
-    'cols' is needed to determine the number of columns.
+Converts the query-result to a tibble. The query-result is either a list (sequence) or an array.
+    If it is a list, 'cols' is needed to determine the number of columns.
 }

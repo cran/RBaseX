@@ -14,12 +14,15 @@ Al methods that are used by BasexClient and QueryClass
 \item \href{#method-bool_test_sock}{\code{SocketClass$bool_test_sock()}}
 \item \href{#method-void_send}{\code{SocketClass$void_send()}}
 \item \href{#method-str_receive}{\code{SocketClass$str_receive()}}
+\item \href{#method-write_Byte}{\code{SocketClass$write_Byte()}}
+\item \href{#method-read_Byte}{\code{SocketClass$read_Byte()}}
 \item \href{#method-get_socket}{\code{SocketClass$get_socket()}}
 \item \href{#method-clone}{\code{SocketClass$clone()}}
 }
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-new"></a>}}
+\if{latex}{\out{\hypertarget{method-new}{}}}
 \subsection{Method \code{new()}}{
 Initialize a new socket
 \subsection{Usage}{
@@ -36,6 +39,7 @@ Initialize a new socket
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-finalize"></a>}}
+\if{latex}{\out{\hypertarget{method-finalize}{}}}
 \subsection{Method \code{finalize()}}{
 When releasing the session-object, close the socketConnection
 \subsection{Usage}{
@@ -45,10 +49,11 @@ When releasing the session-object, close the socketConnection
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-bool_test_sock"></a>}}
+\if{latex}{\out{\hypertarget{method-bool_test_sock}{}}}
 \subsection{Method \code{bool_test_sock()}}{
 Return a boolean that indicates the result from the last action on the socket
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{SocketClass$bool_test_sock(socket)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{SocketClass$bool_test_sock()}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
@@ -61,6 +66,7 @@ Return a boolean that indicates the result from the last action on the socket
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-void_send"></a>}}
+\if{latex}{\out{\hypertarget{method-void_send}{}}}
 \subsection{Method \code{void_send()}}{
 Send input to the socket
 \subsection{Usage}{
@@ -81,28 +87,51 @@ Input is either a string or data that is read from a stream
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-str_receive"></a>}}
+\if{latex}{\out{\hypertarget{method-str_receive}{}}}
 \subsection{Method \code{str_receive()}}{
 Read a string from a stream
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{SocketClass$str_receive(input, output, bin = FALSE)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{SocketClass$str_receive(bin = FALSE)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
 \if{html}{\out{<div class="arguments">}}
 \describe{
-\item{\code{input, output}}{Input- and output-stream}
-
-\item{\code{bin}}{Boolean; TRUE when str_receive has to retrieve binary data}
+\item{\code{bin}}{Logical; TRUE when str_receive has to retrieve binary data}
 }
 \if{html}{\out{</div>}}
 }
-\subsection{Details}{
-This method is not intented to be called direct
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-write_Byte"></a>}}
+\if{latex}{\out{\hypertarget{method-write_Byte}{}}}
+\subsection{Method \code{write_Byte()}}{
+Write 1 byte to the socket
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{SocketClass$write_Byte(Byte)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{Byte}}{A  vector length 1}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-read_Byte"></a>}}
+\if{latex}{\out{\hypertarget{method-read_Byte}{}}}
+\subsection{Method \code{read_Byte()}}{
+Read 1 byte to the socket
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{SocketClass$read_Byte()}\if{html}{\out{</div>}}
 }
 
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-get_socket"></a>}}
+\if{latex}{\out{\hypertarget{method-get_socket}{}}}
 \subsection{Method \code{get_socket()}}{
 Get socket-ID
 \subsection{Usage}{
@@ -112,6 +141,7 @@ Get socket-ID
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{
