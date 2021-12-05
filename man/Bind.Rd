@@ -11,6 +11,9 @@ Bind(query_obj, ...)
 
 \item{...}{Binding Information}
 }
+\value{
+Boolean value which indicates if the operation was executed successfull
+}
 \description{
 Binds a value to a variable.
 }
@@ -22,7 +25,7 @@ Binding information can be provided in the following ways:
       \item{name, list(value)} Name, list of values.
       \item{name, list(value), list(type)} Name, list of values, list of types.
     }
-    For a list of possibe types see \url{http://docs.basex.org/wiki/Java_Bindings#Data_Types}
+    For a list of possibe types see \url{https://docs.basex.org/wiki/Java_Bindings#Data_Types}
 
     This method returns \emph{self} invisibly, thus making it possible to chain together multiple method calls.
 }
