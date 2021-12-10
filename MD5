@@ -1,10 +1,10 @@
-6261cee99610fff55d0580f1c6436181 *DESCRIPTION
+751cffde4403ec7b18da5ea4665652e5 *DESCRIPTION
 85d03307aa55079cb4bcbd645c93ec28 *LICENSE
 60e93f936dc3a2ac2be841705c6f1ba6 *NAMESPACE
 a7c1f361ec9aad4019fb01f2d6d50b1a *R/Add.R
 11af7d96e1f0e0c22ea780073e9dc77e *R/Bind.R
 fe785f554a1ac37e44d17318bb25cc5a *R/Close.R
-92778d6a2dabc050166f1d01e6c4c34e *R/Context.R
+9f705f832b9390c65204134296896f01 *R/Context.R
 9af027cb2615e7f267f811edf6d5d43f *R/Create.R
 4230286175775cfb1be6a493d9815466 *R/Execute.R
 af1fcbfa5f8d0682dc0c100b3cd4d926 *R/Full.R
@@ -23,7 +23,7 @@ d2617c01bd663bde606e1fe595e3020b *R/RBaseX.R
 485de26e5e0a984f441547e86d7678f6 *R/RestoreIntercept.R
 ad26aa1884fb79c4e8e7c41d6598726e *R/SetIntercept.R
 6824f667096f1ac67ce7b774d78016d8 *R/SetSuccess.R
-9fea0e09354af796fe7dd4b693fd977b *R/SocketClass.R
+d30bfb0ceb6ceae1d019ae9e71d537c7 *R/SocketClass.R
 8f983de546f23a2850db9b0ee66f958c *R/Store.R
 344528fa8b492b116c473cd1a8cc722b *R/Updating.R
 3841353f24b56fa569d80600d44ab33f *R/UtilFunc.R
@@ -35,7 +35,7 @@ ad26aa1884fb79c4e8e7c41d6598726e *R/SetIntercept.R
 9439f57a9174331798e1f506b8976aed *man/Add.Rd
 4bb76c985ec70ec3a23e37cd20084194 *man/Bind.Rd
 d612c761ab0bca8f08c169e45c842cda *man/Close.Rd
-0b91f7a62cfaca8aa4c6275ce0e61066 *man/Context.Rd
+40689080272edbad17b6196c5fba5eed *man/Context.Rd
 5bafbd531f7cb1aadc7578ca2cbd493a *man/Create.Rd
 5dbc9102367e9a39fda981a1ed730903 *man/Execute.Rd
 69b8578175bd235742cd9c5529dab549 *man/Full.Rd
@@ -53,7 +53,7 @@ a175da71728266136b987b220565ad50 *man/Replace.Rd
 78314ebdbb370cad31ebbf7b934d2a6c *man/RestoreIntercept.Rd
 0611f5c416cb4b38f850d4a9cd34fa9b *man/SetIntercept.Rd
 d532be307d82f7ecd04ea75fb950b70b *man/SetSuccess.Rd
-ad4887c3605f34f6ff45451fdd7d301b *man/SocketClass.Rd
+941346c5c5fb6e8b46cecc5b939f837e *man/SocketClass.Rd
 6bd8a1a80091ea6e83fbe612c93478d3 *man/Store.Rd
 040839879323ba2e46fd9bd51efd36fe *man/Updating.Rd
 4f884b4e1ee39479f4db0d496a7b1b19 *man/input_to_raw.Rd
