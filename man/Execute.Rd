@@ -25,7 +25,7 @@ When used to execute commands in the Standard mode, this function returns a list
 Executes a database command or a query.
 }
 \details{
-The 'Execute' command is obsolete  and has been renamed to 'Command'.
+The 'Execute' command is deprecated and has been renamed to 'Command'.
     'Execute' is being kept as convenience.
 }
 \examples{

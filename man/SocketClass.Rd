@@ -9,16 +9,16 @@ All methods that are used by BasexClient and QueryClass
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-new}{\code{SocketClass$new()}}
-\item \href{#method-finalize}{\code{SocketClass$finalize()}}
-\item \href{#method-handShake}{\code{SocketClass$handShake()}}
-\item \href{#method-write_Byte}{\code{SocketClass$write_Byte()}}
-\item \href{#method-clone}{\code{SocketClass$clone()}}
+\item \href{#method-SocketClass-new}{\code{SocketClass$new()}}
+\item \href{#method-SocketClass-finalize}{\code{SocketClass$finalize()}}
+\item \href{#method-SocketClass-handShake}{\code{SocketClass$handShake()}}
+\item \href{#method-SocketClass-write_Byte}{\code{SocketClass$write_Byte()}}
+\item \href{#method-SocketClass-clone}{\code{SocketClass$clone()}}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-new"></a>}}
-\if{latex}{\out{\hypertarget{method-new}{}}}
+\if{html}{\out{<a id="method-SocketClass-new"></a>}}
+\if{latex}{\out{\hypertarget{method-SocketClass-new}{}}}
 \subsection{Method \code{new()}}{
 Initialize a new socket
 \subsection{Usage}{
@@ -34,8 +34,8 @@ Initialize a new socket
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-finalize"></a>}}
-\if{latex}{\out{\hypertarget{method-finalize}{}}}
+\if{html}{\out{<a id="method-SocketClass-finalize"></a>}}
+\if{latex}{\out{\hypertarget{method-SocketClass-finalize}{}}}
 \subsection{Method \code{finalize()}}{
 When releasing the session-object, close the socketConnection
 \subsection{Usage}{
@@ -44,8 +44,8 @@ When releasing the session-object, close the socketConnection
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-handShake"></a>}}
-\if{latex}{\out{\hypertarget{method-handShake}{}}}
+\if{html}{\out{<a id="method-SocketClass-handShake"></a>}}
+\if{latex}{\out{\hypertarget{method-SocketClass-handShake}{}}}
 \subsection{Method \code{handShake()}}{
 Send input to the socket and return the response
 \subsection{Usage}{
@@ -65,8 +65,8 @@ Input is a raw vector, built up by converting all input to raw and concatenating
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-write_Byte"></a>}}
-\if{latex}{\out{\hypertarget{method-write_Byte}{}}}
+\if{html}{\out{<a id="method-SocketClass-write_Byte"></a>}}
+\if{latex}{\out{\hypertarget{method-SocketClass-write_Byte}{}}}
 \subsection{Method \code{write_Byte()}}{
 Write 1 byte to the socket
 \subsection{Usage}{
@@ -82,8 +82,8 @@ Write 1 byte to the socket
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-SocketClass-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-SocketClass-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{

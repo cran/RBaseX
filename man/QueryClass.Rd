@@ -10,23 +10,23 @@ The client can be used in 'standard' mode and in 'query' mode.
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-new}{\code{QueryClass$new()}}
-\item \href{#method-ExecuteQuery}{\code{QueryClass$ExecuteQuery()}}
-\item \href{#method-Bind}{\code{QueryClass$Bind()}}
-\item \href{#method-Context}{\code{QueryClass$Context()}}
-\item \href{#method-Full}{\code{QueryClass$Full()}}
-\item \href{#method-More}{\code{QueryClass$More()}}
-\item \href{#method-Next}{\code{QueryClass$Next()}}
-\item \href{#method-Info}{\code{QueryClass$Info()}}
-\item \href{#method-Options}{\code{QueryClass$Options()}}
-\item \href{#method-Updating}{\code{QueryClass$Updating()}}
-\item \href{#method-Close}{\code{QueryClass$Close()}}
-\item \href{#method-clone}{\code{QueryClass$clone()}}
+\item \href{#method-QueryClass-new}{\code{QueryClass$new()}}
+\item \href{#method-QueryClass-ExecuteQuery}{\code{QueryClass$ExecuteQuery()}}
+\item \href{#method-QueryClass-Bind}{\code{QueryClass$Bind()}}
+\item \href{#method-QueryClass-Context}{\code{QueryClass$Context()}}
+\item \href{#method-QueryClass-Full}{\code{QueryClass$Full()}}
+\item \href{#method-QueryClass-More}{\code{QueryClass$More()}}
+\item \href{#method-QueryClass-Next}{\code{QueryClass$Next()}}
+\item \href{#method-QueryClass-Info}{\code{QueryClass$Info()}}
+\item \href{#method-QueryClass-Options}{\code{QueryClass$Options()}}
+\item \href{#method-QueryClass-Updating}{\code{QueryClass$Updating()}}
+\item \href{#method-QueryClass-Close}{\code{QueryClass$Close()}}
+\item \href{#method-QueryClass-clone}{\code{QueryClass$clone()}}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-new"></a>}}
-\if{latex}{\out{\hypertarget{method-new}{}}}
+\if{html}{\out{<a id="method-QueryClass-new"></a>}}
+\if{latex}{\out{\hypertarget{method-QueryClass-new}{}}}
 \subsection{Method \code{new()}}{
 Initialize a new instance from QueryClass
 \subsection{Usage}{
@@ -49,8 +49,8 @@ QueryClass-instances can only be created by calling the 'Query'-method from
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-ExecuteQuery"></a>}}
-\if{latex}{\out{\hypertarget{method-ExecuteQuery}{}}}
+\if{html}{\out{<a id="method-QueryClass-ExecuteQuery"></a>}}
+\if{latex}{\out{\hypertarget{method-QueryClass-ExecuteQuery}{}}}
 \subsection{Method \code{ExecuteQuery()}}{
 Executes a query.
 \subsection{Usage}{
@@ -59,8 +59,8 @@ Executes a query.
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Bind"></a>}}
-\if{latex}{\out{\hypertarget{method-Bind}{}}}
+\if{html}{\out{<a id="method-QueryClass-Bind"></a>}}
+\if{latex}{\out{\hypertarget{method-QueryClass-Bind}{}}}
 \subsection{Method \code{Bind()}}{
 Binds a value to a variable.
 \subsection{Usage}{
@@ -82,8 +82,8 @@ When using the primitive functions, this function can be chained.
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Context"></a>}}
-\if{latex}{\out{\hypertarget{method-Context}{}}}
+\if{html}{\out{<a id="method-QueryClass-Context"></a>}}
+\if{latex}{\out{\hypertarget{method-QueryClass-Context}{}}}
 \subsection{Method \code{Context()}}{
 Binds a value to the context. The type will be ignored if the string is empty.
 \subsection{Usage}{
@@ -105,8 +105,8 @@ When using the primitive functions, this function can be chained.
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Full"></a>}}
-\if{latex}{\out{\hypertarget{method-Full}{}}}
+\if{html}{\out{<a id="method-QueryClass-Full"></a>}}
+\if{latex}{\out{\hypertarget{method-QueryClass-Full}{}}}
 \subsection{Method \code{Full()}}{
 Executes a query and returns a vector with all resulting items as strings,
     prefixed by the 'XDM' (Xpath Data Model) Meta Data <https://www.xdm.org/>.
@@ -116,8 +116,8 @@ Executes a query and returns a vector with all resulting items as strings,
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-More"></a>}}
-\if{latex}{\out{\hypertarget{method-More}{}}}
+\if{html}{\out{<a id="method-QueryClass-More"></a>}}
+\if{latex}{\out{\hypertarget{method-QueryClass-More}{}}}
 \subsection{Method \code{More()}}{
 Indicates if there are any other results in the query-result.
 \subsection{Usage}{
@@ -126,8 +126,8 @@ Indicates if there are any other results in the query-result.
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Next"></a>}}
-\if{latex}{\out{\hypertarget{method-Next}{}}}
+\if{html}{\out{<a id="method-QueryClass-Next"></a>}}
+\if{latex}{\out{\hypertarget{method-QueryClass-Next}{}}}
 \subsection{Method \code{Next()}}{
 Returns the next result when iterating over a query
 \subsection{Usage}{
@@ -136,8 +136,8 @@ Returns the next result when iterating over a query
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Info"></a>}}
-\if{latex}{\out{\hypertarget{method-Info}{}}}
+\if{html}{\out{<a id="method-QueryClass-Info"></a>}}
+\if{latex}{\out{\hypertarget{method-QueryClass-Info}{}}}
 \subsection{Method \code{Info()}}{
 Returns a string with query compilation and profiling info.
 \subsection{Usage}{
@@ -146,8 +146,8 @@ Returns a string with query compilation and profiling info.
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Options"></a>}}
-\if{latex}{\out{\hypertarget{method-Options}{}}}
+\if{html}{\out{<a id="method-QueryClass-Options"></a>}}
+\if{latex}{\out{\hypertarget{method-QueryClass-Options}{}}}
 \subsection{Method \code{Options()}}{
 Returns a string with all query serialization parameters, which
     can e.g. be assigned to the serializer option.
@@ -157,8 +157,8 @@ Returns a string with all query serialization parameters, which
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Updating"></a>}}
-\if{latex}{\out{\hypertarget{method-Updating}{}}}
+\if{html}{\out{<a id="method-QueryClass-Updating"></a>}}
+\if{latex}{\out{\hypertarget{method-QueryClass-Updating}{}}}
 \subsection{Method \code{Updating()}}{
 Check if the query contains updating expressions.
 \subsection{Usage}{
@@ -167,8 +167,8 @@ Check if the query contains updating expressions.
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Close"></a>}}
-\if{latex}{\out{\hypertarget{method-Close}{}}}
+\if{html}{\out{<a id="method-QueryClass-Close"></a>}}
+\if{latex}{\out{\hypertarget{method-QueryClass-Close}{}}}
 \subsection{Method \code{Close()}}{
 Closes and unregisters the query with the specified ID
 \subsection{Usage}{
@@ -181,8 +181,8 @@ When using the primitive functions, this function can be chained.
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-QueryClass-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-QueryClass-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{
